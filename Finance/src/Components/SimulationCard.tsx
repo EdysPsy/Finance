@@ -105,14 +105,7 @@ const SimulationCard: React.FC<Props> = ({ data, onReset }) => {
       )}
 
       {!loading && !error && report && (
-        <div
-          className="result-section ai-report"
-          dangerouslySetInnerHTML={{ __html: markdownToHtml(report) }}
-        />
-      )}
-      {/* NOVO: Apresentação do relatório final dentro de um Card estruturado */}
-      {!loading && !error && report && (
-        <div className="result-section ai-report-container">
+        <div className="ai-report-container">
           <div className="ai-response-card">
             <div className="ai-card-header">
               <span className="ai-badge">Análise Inteligente</span>
