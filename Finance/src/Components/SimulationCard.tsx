@@ -48,7 +48,7 @@ const SimulationCard: React.FC<Props> = ({ data, onReset }) => {
           },
           body: JSON.stringify({
             model: 'glm-4.5-flash',
-            max_tokens: 1000,
+            max_tokens: 10000,
             messages: [{ role: 'user', content: prompt }],
           }),
         });
